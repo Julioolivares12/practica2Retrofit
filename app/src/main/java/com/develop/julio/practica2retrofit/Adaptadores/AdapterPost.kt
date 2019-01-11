@@ -9,7 +9,7 @@ import com.develop.julio.practica2retrofit.Data.Post
 import com.develop.julio.practica2retrofit.R
 
 class AdapterPost : RecyclerView.Adapter<AdapterPost.PostHolder>() {
-    private lateinit var postlist : MutableList<Post>
+    private  var postlist : MutableList<Post> = mutableListOf()
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): PostHolder {
         var view = LayoutInflater.from(p0.context)
         return PostHolder(view.inflate(R.layout.row_post,p0,false))
